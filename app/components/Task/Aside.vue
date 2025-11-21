@@ -39,7 +39,7 @@
     <div class="flex flex-col gap-2 bg-white rounded-xl p-6">
       <p>A livré</p>
       <date-picker
-        :dateEcheance="props.task.date_echeance"
+        :dateEcheance="task?.date_echeance ?? null"
         @selectedDate="handleSelectedDate"
         class="ml-auto"
       />
